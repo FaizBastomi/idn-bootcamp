@@ -31,7 +31,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/inter_bold"
             android:text="@string/game_name"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +68,7 @@
             android:layout_marginEnd="28dp"
             android:fontFamily="@font/inter_medium"
             android:text="4.4"
-            android:textColor="@color/yellow"
+            android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +82,7 @@
             android:layout_marginTop="18dp"
             android:fontFamily="@font/inter_medium"
             android:text="Action"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -95,7 +95,7 @@
             android:layout_marginTop="18dp"
             android:fontFamily="@font/inter_medium"
             android:textSize="16sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="RPG"
             app:layout_constraintStart_toEndOf="@+id/textView6"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -108,7 +108,7 @@
             android:layout_marginTop="14dp"
             android:fontFamily="@font/inter_bold"
             android:text="About Game"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="22sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -121,7 +121,7 @@
             android:layout_marginTop="12dp"
             android:fontFamily="@font/inter_medium"
             android:text="@string/paraf1"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -135,7 +135,7 @@
             android:fontFamily="@font/inter_medium"
             android:text="@string/game_core_syp"
             android:textAlignment="viewStart"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -148,7 +148,7 @@
             android:layout_marginTop="5dp"
             android:fontFamily="@font/inter_semi_bold"
             android:text="Developers"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -175,7 +175,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/inter_semi_bold"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="Publisher"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
