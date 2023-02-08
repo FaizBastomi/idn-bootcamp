@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">app_layouting</string>
+    <string name="main_title">Digiedaw</string>
+    <string name="game_name">Elden Ring</string>
+    <string name="release">2022-02-25</string>
+    <string name="paraf1">The Golden order has been broken.</string>
+    <string name="game_core_syp">Rise, Tarnished, and be guided by grace to bran dish the power of the elden Ring and become an Elde Lord in the Lands Between.\n\nIn the Lands Between ruled by Queen Marika the Eternal, the Elden Ring, the source of the Erdtree, has been shattered.\n\nMarika’s offspring, demigods all, claimed the shards of the Elden Ring known as the Great Runes, and the mad taint of their newfound strength triggered a war: The Shattering. A war that meant abandonment by the Greater</string>
+    <string name="favorite_btn">Add To Favorite</string>
+</resources>
