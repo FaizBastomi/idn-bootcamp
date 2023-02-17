@@ -8,7 +8,6 @@ import com.bootcamp.tugas3_bootcampidn.databinding.ItemRowNewsBinding
 import com.bootcamp.tugas3_bootcampidn.model.ArticlesItem
 import com.bumptech.glide.Glide
 import java.time.LocalDate
-import java.time.LocalDateTime
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 
