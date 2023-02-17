@@ -1,6 +1,7 @@
 package com.bootcamp.tugas3_bootcampidn
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bootcamp.tugas3_bootcampidn.databinding.ActivityDetailNewsBinding
@@ -20,7 +21,7 @@ class DetailNewsActivity : AppCompatActivity() {
             tvJudul.text = news?.title
             tvDeskripsi.text = news?.description
             btnShare.setOnClickListener {
-                shareDescription(news?.description)
+                shareDescription(news?.url)
             }
         }
         Glide.with(binding.imgNews)
@@ -29,16 +30,13 @@ class DetailNewsActivity : AppCompatActivity() {
             .into(binding.imgNews)
     }
 
-    private fun shareDescription(description: String?) {
+    private fun shareDescription(url: String?) {
         val intent = Intent()
         intent.apply {
-            action = Intent.ACTION_WEB_SEARCH
-            putExtra(Intent.EXTRA_TEXT, description)
-            type = "text/plain"
+            action = Intent.ACTION_VIEW
+            data = Uri.parse(url)
         }
-
-        val shareIntent = Intent.createChooser(intent, "Share Description")
-        startActivity(shareIntent)
+        startActivity(intent)
     }
 
     companion object {

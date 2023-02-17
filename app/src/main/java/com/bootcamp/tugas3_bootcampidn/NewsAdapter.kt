@@ -7,6 +7,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bootcamp.tugas3_bootcampidn.databinding.ItemRowNewsBinding
 import com.bootcamp.tugas3_bootcampidn.model.ArticlesItem
 import com.bumptech.glide.Glide
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.LocalTime
+import java.time.format.DateTimeFormatter
 
 class NewsAdapter() :
     RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
@@ -15,10 +19,13 @@ class NewsAdapter() :
     inner class NewsViewHolder(private val binding: ItemRowNewsBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(data: ArticlesItem) {
+            val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'")
+            val date = LocalDate.parse(data.publishedAt, formatter)
+            val time = LocalTime.parse(data.publishedAt, formatter)
             binding.apply {
                 tvJudul.text = data.title
                 tvPenulis.text = data.author
-                tvTanggalPosting.text = data.publishedAt
+                tvTanggalPosting.text = "$date, $time"
                 binding.cardNews.setOnClickListener {
                     val intent = Intent(itemView.context, DetailNewsActivity::class.java)
                     intent.putExtra(DetailNewsActivity.EXTRA_NEWS, data)
