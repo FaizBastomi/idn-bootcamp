@@ -28,7 +28,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 android:text="Judul"
-                android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
@@ -39,7 +38,6 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="10dp"
                 android:text="Deskripsi"
-                android:textColor="@color/black"
                 android:textSize="17sp" />
 
             <Button
