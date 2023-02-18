@@ -15,6 +15,8 @@ class DetailNewsActivity : AppCompatActivity() {
         binding = ActivityDetailNewsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "Details"
         val news = intent.getParcelableExtra<ArticlesItem>(EXTRA_NEWS)
 
         binding.apply {
