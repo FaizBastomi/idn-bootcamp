@@ -1,9 +1,11 @@
-package com.bootcamp.tugas3_bootcampidn
+package com.bootcamp.tugas3_bootcampidn.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bootcamp.tugas3_bootcampidn.DetailNewsActivity
+import com.bootcamp.tugas3_bootcampidn.R
 import com.bootcamp.tugas3_bootcampidn.databinding.ItemRowNewsBinding
 import com.bootcamp.tugas3_bootcampidn.model.ArticlesItem
 import com.bumptech.glide.Glide

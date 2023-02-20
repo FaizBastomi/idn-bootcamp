@@ -3,10 +3,11 @@ package com.bootcamp.tugas3_bootcampidn.api
 import com.bootcamp.tugas3_bootcampidn.model.Response
 import retrofit2.Call
 import retrofit2.http.GET
+import retrofit2.http.Query
 
 interface ApiService {
 
-    @GET("top-headlines?country=id&apiKey=f044de69086e45198f8406be2094a229")
-    fun getNews() : Call<Response>
+    @GET("top-headlines")
+    fun getNews(@Query("country") country: String, @Query("apikey") apikey: String): Call<Response>
 
 }
