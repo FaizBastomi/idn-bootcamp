@@ -28,7 +28,7 @@ abstract class MealDatabase : RoomDatabase() {
             synchronized(this) {
                 val newInstance = Room.databaseBuilder(
                     ctx.applicationContext, MealDatabase::class.java,
-                    "meal_database"
+                    "meal"
                 ).build()
 
                 instance = newInstance
