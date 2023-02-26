@@ -16,7 +16,7 @@
         <activity
             android:name=".ui.FavoriteDetailActivity"
             android:exported="false"
-            android:parentActivityName=".ui.DetailActivity" />
+            android:parentActivityName=".ui.FavoriteActivity" />
         <activity
             android:name=".ui.FavoriteActivity"
             android:exported="false"
