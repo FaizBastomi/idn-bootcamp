@@ -46,6 +46,7 @@ class DetailActivity : AppCompatActivity() {
                     handleUi(wrapper = false, progress = true, errorTv = false)
                 }
                 is NetworkResult.Error -> {
+                    binding.errorText.setText(R.string.fatal_error)
                     handleUi(wrapper = false, progress = false, errorTv = true)
                 }
                 is NetworkResult.Success -> {
