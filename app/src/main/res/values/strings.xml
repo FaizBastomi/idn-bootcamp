@@ -3,6 +3,7 @@
     <string name="sub_title">List Meal :</string>
     <string name="list_favorite">List Favorite :</string>
     <string name="error_text">Error Text</string>
+    <string name="fatal_error">Something went wrong, please check log</string>
     <string name="instruction_title">Instructions</string>
     <string name="instruction_text">Instruction Text</string>
     <string name="watch_text">Watch</string>

@@ -78,10 +78,26 @@
         android:id="@+id/error_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/error_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/empty_desc"
+        app:layout_constraintVertical_bias="0.03"
+        tools:text="@string/error_text" />
+
+    <ImageView
+        android:id="@+id/empty_desc"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_description"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/light_blue" />
 </androidx.constraintlayout.widget.ConstraintLayout>

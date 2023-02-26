@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.faiz.faizbastomi_mealdb.R
 import com.faiz.faizbastomi_mealdb.adapter.MealAdapter
 import com.faiz.faizbastomi_mealdb.data.network.handler.NetworkResult
 import com.faiz.faizbastomi_mealdb.data.network.model.MealsItems
@@ -29,13 +30,13 @@ class MainActivity : AppCompatActivity() {
         mainViewModel.mealsList.observe(this@MainActivity) { result ->
             when (result) {
                 is NetworkResult.Loading -> {
-                    handleUi(recyclerView = false, progress = true, errorTv = false)
+                    handleUi(recyclerView = false, progress = true, errorTv = false, desc = false)
                 }
                 is NetworkResult.Error -> {
                     binding.apply {
-                        errorText.text = "Something went wrong, Please check log"
+                        errorText.setText(R.string.fatal_error)
                     }
-                    handleUi(recyclerView = false, progress = false, errorTv = true)
+                    handleUi(recyclerView = false, progress = false, errorTv = true, desc = true)
                 }
                 is NetworkResult.Success -> {
                     val mealsAdapter = MealAdapter()
@@ -52,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                             startActivity(intent)
                         }
                     })
-                    handleUi(recyclerView = true, progress = false, errorTv = false)
+                    handleUi(recyclerView = true, progress = false, errorTv = false, desc = false)
                 }
             }
         }
@@ -61,12 +62,14 @@ class MainActivity : AppCompatActivity() {
     private fun handleUi(
         recyclerView: Boolean,
         progress: Boolean,
-        errorTv: Boolean
+        errorTv: Boolean,
+        desc: Boolean
     ) {
         binding.apply {
             rvMeal.isVisible = recyclerView
             progressBar.isVisible = progress
             errorText.isVisible = errorTv
+            emptyDesc.isVisible = desc
         }
     }
 }
